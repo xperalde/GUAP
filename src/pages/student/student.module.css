@@ -1,0 +1,164 @@
+.section__containerContent{
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+	padding-bottom: 100px;
+}
+/* === Resume Styles === */
+.article__containerResume{
+	background-color: white;
+	width: 100%;
+	grid-column: 2;
+	margin-top: 30px;
+	padding: 0 15px 0 10px;
+}
+.article__containerBlock{
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	box-shadow: 1px 1px 5px rgb(177,179,180);
+}
+.block__text{
+ 	color: white;
+	margin: auto 0 auto 0;
+	padding-left: 10px;
+}
+.block_btn{
+	border: none;
+	background-color: white;
+	height: 40px;
+	margin: auto 10px auto 0;
+	border-radius: 4px;
+	width: 120px;
+	cursor: pointer;
+	box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	7px 7px 20px 0px rgba(0,0,0,.1),
+	4px 4px 5px 0px rgba(0,0,0,.1);
+	transition: box-shadow 0.4s ease, transform 0.2s ease;
+}
+.block_btn:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px) scale(1.02);
+}
+.block_btn:active {
+	transform: scaleY(0.98);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form__dropDown{
+	appearance: none;
+}
+.main__formResume{
+	display: flex;
+	flex-direction: column;
+	padding: 0 9% 0 9%;
+	max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+.main__formResume.expanded {
+  max-height: 1500px;
+}
+.main__formResume .form__dropDown, .form__fieldToFill, .form__containerCheckbox{
+	border: 3px;
+	border-radius: 8px;
+	background-color: rgb(227,229,230);
+}
+.form__fieldTitle{
+	padding-left: 20px;
+	margin: 17px 0 5px 0;
+}
+.form__dropDown, .form__fieldToFill{
+	font-size: 16px;
+	padding-left: 20px;
+}
+.form__fieldToFill{
+	padding: 8px 20px 8px 20px;
+	height: 70px;
+	resize: none;
+}
+.form__dropDown{
+	height: 40px;
+}
+.form__containerCheckbox{
+	display: flex;
+	flex-wrap:wrap;
+	padding: 5px 5px 5px 5px;
+	height: auto;
+}
+.tagCheckbox{
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 5px 5px 5px 5px;
+	background-color: RGB(251,253,255);
+	cursor: pointer;
+}
+.tagCheckboxActive {
+  background-color: rgb(176, 215, 176);
+}
+
+.form__buttonInteraction{
+	margin: 20px 0 20px 33%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	height: 40px;
+	font-size: 18px;
+	background-color: rgb(0, 90, 170);
+	color: white;
+	transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.form__buttonInteraction:hover {
+	background-color: rgba(0, 90, 170, 0.8);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px) scale(1.03);
+	border: 1px solid rgba(0, 90, 170, 0.8);
+}
+.form__buttonInteraction:active {
+	transform: scaleY(0.95);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.form__line{
+	height: 1px;
+	width: 90%;
+	background-color: rgba(0,0,0,.2);
+	margin: 0 auto;
+}
+/* === Offer Styles === */
+.article__noOffers{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	grid-column: 2;
+	color: rgba(0,0,0,.7)
+}
+.article__offers{
+	grid-column: 2;
+	margin-top: 30px;
+	margin: 15px 10px 15px 10px;
+	color: white;
+}
+.article__offerContainer{
+	display: flex;
+	background-color: rgb(0, 90, 170);
+	width: 100%;
+	border-radius: 6px;
+	padding: 20px 10px 20px 10px;
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
+.article__offerContainer_accepted{
+	background-color: rgb(0, 44, 95);
+}
+.article__offerName{
+	margin-bottom: 13px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.article__offerDescription{
+	padding-left: 30px;
+}

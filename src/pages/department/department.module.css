@@ -1,0 +1,123 @@
+.section__container {
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+	padding-bottom: 100px;
+}
+.article__container {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+.article__title {
+	width: 98%;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	text-align: center;
+	margin: 20px 0 10px 0;
+	padding: 10px;
+	text-transform: uppercase;	
+}
+.article__group{
+	margin-bottom: 15px;
+	width: 98%;
+}
+.article__nameGroupContainer{
+	display: flex;
+	border: 1px solid rgba(0, 0, 0, .15);
+	padding: 10px 10px 10px 10px;
+	margin: 0 20px 0 0;
+	width: 100%;
+	justify-content: space-between;
+	border-radius: 8px;
+	align-items: center;
+	cursor: pointer;
+	background-color: rgba(0,0,0,.05)
+}
+.rotateIcon {
+  transition: transform 0.3s ease;
+}
+.rotateIcon.expanded {
+  transform: rotate(180deg);
+}
+.article__memberList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.article__memberList.expanded {
+  max-height: 5000px;
+}
+.article__peopleContainer{
+	border: 1px solid rgba(0, 0, 0, .15);
+	padding: 10px 10px 10px 10px;
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: rgba(0,0,0,.1);
+}
+.li__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.li__name{
+	color:white;
+	padding: 8px;
+	border-radius: 4px;
+	width: 150px;
+	text-align: center;
+}
+.div__containerDetails{
+	text-align: center;
+	display: flex;
+	justify-content: right;
+	margin-top: 10px;
+}
+.div__dDButton{
+	background-color: white;
+	border-radius: 4px;
+	border: none;
+	padding: 7px;
+	cursor: pointer;
+	font-size: 15px;
+	transition: box-shadow 0.4s ease, transform 0.2s ease;
+}
+.div__dDButton:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px) scale(1.02);
+}
+.div__companyName{
+	font-weight: bold;
+}
+.div__isVisibleCompanies{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	align-items: center;
+}
+.article__titleStatistic{
+	display: flex;
+	justify-content: space-between;
+	width: 98%;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	margin: 20px 0 10px 0;
+	padding: 10px;
+	text-transform: uppercase;	
+}
+.article__companyContainer{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-bottom: 11px;
+	background-color: rgba(0,0,0,.05);
+	align-items: center;
+}
+.article__companyStatistic{
+	background-color: rgb(0,90,170);
+	border-radius: 4px;
+	color: white;
+	padding: 5px;
+}

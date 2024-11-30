@@ -1,0 +1,25 @@
+.header__container{
+	outline: 1px solid rgb(227,229,230);
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	height: 60px;
+	padding: 0 10px 0 10px;
+}
+.containerLogoName{
+	display: flex;
+	margin: auto 0 auto 0;
+}
+
+.header__exitBtn{
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+.header__logo{
+	height: 60px;
+}
+.header__name{
+	font-size: 16px;
+	margin: auto 0 auto 0;
+}
