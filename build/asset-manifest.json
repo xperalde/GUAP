@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbaa8a7b.css",
+    "main.js": "/static/js/main.fe30148e.js",
+    "static/media/roboto-v30-latin-regular.ttf": "/static/media/roboto-v30-latin-regular.6b1ef4e4ab8eafee13c1.ttf",
+    "static/media/roboto-v30-latin-regular.woff2": "/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
+    "static/media/logo.svg": "/static/media/logo.90b6ed7507f9404f5b273aacce5ebfa4.svg",
+    "index.html": "/index.html",
+    "main.cbaa8a7b.css.map": "/static/css/main.cbaa8a7b.css.map",
+    "main.fe30148e.js.map": "/static/js/main.fe30148e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbaa8a7b.css",
+    "static/js/main.fe30148e.js"
+  ]
+}
